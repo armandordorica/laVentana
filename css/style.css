@@ -296,8 +296,9 @@ p{
 
 
 /*============== Testimonials  ================*/ 
+
 .testimonial{
-    background-image: url("../images/testimonial-bg.jpg");
+    background-image: url("../images/palmpattern.jpg");
     background-attachment: fixed; 
     background-repeat: no-repeat;
     background-size: cover;
@@ -309,8 +310,6 @@ p{
 
 .testimonial-overlay{
     background-color: rgba(31, 31, 31, .75);
-    padding-top: 80px; 
-    padding-bottom: 80px; 
 }
 
 .carousel-indicators{
@@ -320,7 +319,10 @@ p{
 /*Adding a border frame to the images inside the carousel */ 
 .carousel-inner .item img{
     border: 2px solid #129CF3; 
-    border-radius: 50%; 
+  /*  border-radius: 50%; */
+  width: auto;
+  height: 225px;
+  max-height: 225px;
     padding: 3px; 
 }
 
@@ -350,7 +352,7 @@ p{
     color: #D8D8D8;
     font-size: 18px;
     line-height: 27px; 
-    padding-top: 50px; 
+    padding-top: 20px; 
 }
 
 /*============== Features ================*/ 

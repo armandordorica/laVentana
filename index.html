@@ -27,11 +27,11 @@
         <li><a href="#nosotros">NOSOTROS</a></li>
          <li><a href="#laventana">LA VENTANA</a></li>
         <li><a href="#paquetes">PAQUETES</a></li>
+        <li><a href="#carousel">HOSPEDAJE</a></li>
         <li><a href="#kiteschool">KITE SCHOOL</a></li>
-        <li><a href="#tour">EQUIPMENT RENTAL</a></li>
-        <li><a href="#tour">COMIDA</a></li>
-        <li><a href="#contact">CONTACT</a></li>
-        <li class="dropdown">
+        <li><a href="#renta">RENTA DE EQUIPOS</a></li>
+        <li><a href="#contacto">CONTACTO</a></li>
+        <!--<li class="dropdown">
           <a class="dropdown-toggle" data-toggle="dropdown" href="#">MORE
             <span class="caret"></span>
           </a>
@@ -40,8 +40,7 @@
             <li><a href="#">Extras</a></li>
             <li><a href="#">Media</a></li>
           </ul>
-        </li>
-        <li><a href="#"><span class="glyphicon glyphicon-search"></span></a></li>
+        </li>-->
       </ul>
     </div>
   </div>
@@ -50,6 +49,32 @@
     <source src="laventanaSoundtrack.mp3" type="audio/mpeg"> 
 
   </audio>
+
+    <script src="http://maps.googleapis.com/maps/api/js"></script>
+
+
+  <script>
+  var myCenter=new google.maps.LatLng(24.0465, -109.9943);
+
+  function initialize()
+  {
+  var mapProp = {
+    center:myCenter,
+    zoom:15,
+    mapTypeId:google.maps.MapTypeId.ROADMAP
+    };
+
+  var map=new google.maps.Map(document.getElementById("googleMap"),mapProp);
+
+  var marker=new google.maps.Marker({
+    position:myCenter,
+    });
+
+  marker.setMap(map);
+  }
+
+  google.maps.event.addDomListener(window, 'load', initialize);
+  </script>
 </head>
 <body>
 
@@ -161,7 +186,7 @@
     <p>Comida? Transporte? Hospedaje? Actividades? No te preocupes. Tenemos todo bajo control.</p>
   </div>
   </div>
-  <div class="row" style="margin-left: 60px; margin-right: 60px;">
+  <div class="row" style="margin-left: 60px;margin-right: 60px;margin-bottom: 60px;">
     <div class="col-sm-3">
       <div class="panel panel-default text-center">
         <div class="panel-heading" style="background-color: #8FD8D8 !important;">
@@ -247,21 +272,93 @@
 </div>
         </section>
 
-<section id="kiteschool"> 
+
+     <section class="testimonial" id="carousel">
+
+      <div class="testimonial-overlay">
         <div class="container">
-                <div class="row">
-                    <div class="col-md-10 col-md-offset-1">
-                        
-                        <!-- About us title and description-->
-                        <div class="section-title">
-                            <h2>KITE SCHOOL</h2>
-                            <p>Nuestros instructores están capacitados para enseñarte el kiteboarding con las mejores técnicas de aprendizaje con un equipo de la mejor calidad. Utilizando cascos con radio te creamos un ambiente más relajado ya que siempre estarás en contacto con tu coach y esto mismo ayuda a que el aprendizaje se lleve de una manera mucho más rápida. En tan sólo unas horas podrás no sólo manejar el kite y la tabla, sino tendrás todos los conocimientos que se requieran para convertirte en un “kitero” seguro para practicar el deporte por ti mismo.</p>
-                        </div>
-                    </div>
+          <div class="row">
+            <div class="col-md-12">
+              <div id="carousel-testimonial" class="carousel slide" data-ride="carousel">
+                <!-- Indicators --> 
+                <ol class="carousel-indicators">
+                  <li data-target="#carousel-testimonial" data-slide-to="0" class="active"></li>
+                  <li data-target="#carousel-testimonial" data-slide-to="1"></li>
+                  <li data-target="#carousel-testimonial" data-slide-to="2"></li>
+                </ol>
+
+                <!-- Wrapper for slides --> 
+                <div class="carousel-inner">
+
+                  <!-- Item 01 --> 
+                  <div class="item active text-center testimonial-caption" style="padding-top: 20px; padding-bottom: 80px; ">
+                    <img src="images/hospedaje.jpg" alt="testimonial" class="center-block" height="300" width="400">
+                        <h2> Hospedaje </h2>
+                        <p style="padding-top: 20px;"> Contamos con un cuarto compuesto por una cama matrimonial y baño completo privado.
+Área común de cocina, comedor, terraza y patio.
+Área de lavado y secado.
+Servicio de computadora con WIFI de la mejor calidad, con impresora, scanner y copiadora.</p>
                 
+
+
+                  </div>
+
+
+                  <!-- Item 02 --> 
+                  <div class="item text-center">
+                    <img src="images/kiteschool.jpg" alt="testimonial" class="center-block" height="300" width="400">
+
+                    <div class="testimonial-caption" id="kiteschool">
+                      <h2> KITE SCHOOL </h2>
+                      <p>Nuestros instructores están capacitados para enseñarte el kiteboarding con las mejores técnicas de aprendizaje con un equipo de la mejor calidad. Utilizando cascos con radio te creamos un ambiente más relajado ya que siempre estarás en contacto con tu coach y esto mismo ayuda a que el aprendizaje se lleve de una manera mucho más rápida. En tan solo unas horas podrás no sólo manejar el kite y la tabla, sino tendrás todos los conocimientos que se requieran para convertirte en un “kitero” seguro para practicar el deporte por ti mismo.</p>
+                    </div>
+                  </div>
+
+
+                  <!-- Item 03 -->
+
+                  <div class="item text-center">
+                    <img src="images/paddle.png" alt="testimonial" class="center-block" height="300" width="400">
+
+                    <div class="testimonial-caption" id="renta">
+                      <h2> TOURS Y RENTA DE EQUIPO DEPORTIVO </h2>
+                      <p>Tenemos equipo de MTB (Mountain Bike), Paddle Boards y Kiteboarding. </p>
+                    </div>
+                  </div>
+
                 </div>
+
+
+              </div>
             </div>
-          </section>
+          </div>
+
+        </div>
+      </div>
+    </section>
+
+<section id="contacto">
+            <div class="container">
+              <div class="section-title">
+                            <h2>CONTACTO</h2>
+                          </div>
+          <div class="row test">
+            <div class="col-md-4">
+              <p><span class="glyphicon glyphicon-map-marker"></span><strong> Dirección</strong>
+                <br> McConnell Engineering Building, Room 505<br> 
+                Department of Electrical and Computer Engineering<br>
+                McGill University<br> 
+                3480 University Street<br>
+                Montréal, Québec<br>
+                Canada<br>
+              </p>
+            </div>
+
+            <div class="col-md-8">
+              <div id="googleMap" style="width:700px;height:380px;"></div>
+           </div>
+         </div>
+       </section>
         
 <!-- Video Js -->
         <script src="js/video.js"></script>
