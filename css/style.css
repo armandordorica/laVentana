@@ -225,10 +225,6 @@ p{
     margin-top: 8px; 
 }
 
-.choose-us-title{
-    padding-bottom: 50px; 
-    
-}
 .choose-us-title h2{
     text-transform: uppercase;
     font-weight: 800; 
@@ -248,15 +244,21 @@ p{
 }
 
 .choose-us-title p{
+   
+}
+.choose-us-title p{
+    color: #333; 
+    font-size: 18px; 
+    line-height: 28px; 
+    font-weight: 300; 
     margin-top: 40px;
-    font-size: 19px; 
     line-height: 24px; 
+    font-family: "Helvetica Neue",Helvetica,Arial,sans-serif;
 }
 
 .choose-us-item{
     position: relative; 
     padding-bottom: 4px; 
-    padding-left: 80px;
 }
 
 .choose-us-item div{
@@ -282,9 +284,16 @@ p{
 }
 
 .choose-us-item p{
-    color: #727272; 
-    font-size: 15px; 
+    color: #333; 
+    font-size: 16px; 
+    line-height: 28px; 
+    font-weight: 300; 
+    line-height: 24px; 
+    font-family: "Helvetica Neue",Helvetica,Arial,sans-serif;
 }
+
+
+
 
 /*============== Testimonials  ================*/ 
 .testimonial{
