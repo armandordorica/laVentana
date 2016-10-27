@@ -72,8 +72,8 @@ p{
 }
 
 .navbar-default .navbar-nav > li > a {
-    color: #A9ADB0 !important; 
-    font-family: "Raleway", sans-serif; 
+    color: red !important; 
+    font-family: "Helvetica", sans-serif; 
     transition: all 1s !important; 
     -o-transition: all 1s !important; 
     -moz-transition: all 1s !important;
@@ -470,7 +470,7 @@ p{
 
 /*============== Counter ================*/ 
 .counter{
-    background-image: url("../images/counter-bg.jpg");
+    background-image: url("../images/people-pattern.jpg");
     background-repeat: no-repeat; 
     background-attachment: fixed; 
     background-size: cover;
@@ -735,7 +735,7 @@ p{
 .video-section .pattern-overlay {
 background-color: rgba(71, 71, 71, 0.59);
 padding: 100px 0 5px;
-min-height: 496px; 
+min-height: 700px; 
 /* Incase of overlay problems just increase the min-height*/
 }
 .video-section h1, .video-section h3{
@@ -743,9 +743,9 @@ text-align:center;
 color:#fff;
 }
 .video-section h1{
-font-size:50px;
+font-size:40px;
 font-family: 'Helvetica', serif;
-font-weight:bold;
+font-weight: thin;
  letter-spacing: 5px;
 text-transform: uppercase;
 margin: 20px auto 0px;
